@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Clone'){
+             stage('build'){
             steps {
-                    sh "git clone https://github.com/Gitjeoma/QACRUD.git"
+                sh "python3 app.py"
             }
         }
     }
