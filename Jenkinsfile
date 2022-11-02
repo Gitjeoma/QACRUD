@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                    sh "https://github.com/Gitjeoma/QACRUD.git"
+                    sh "git clone https://github.com/Gitjeoma/QACRUD.git"
             }
         }
     }
