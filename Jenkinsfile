@@ -6,9 +6,10 @@ pipeline {
                     sh "git clone https://github.com/Gitjeoma/QACRUD.git"
             }
         }
-             stage('build'){
+             stage('Build'){
             steps {
-                sh 'python3 app.py'
+                docker{
+                docker build -t ournginx .
             }
         }
        stage('test'){
