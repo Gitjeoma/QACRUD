@@ -8,8 +8,7 @@ pipeline {
         }
              stage('Build'){
             steps {
-                docker{
-                docker build -t ournginx .
+                
             }
         }
        stage('test'){
